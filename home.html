@@ -7,36 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="shortcut icon" href="images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="home.html">
-                    <img src="images/gwcweblogo.png" alt="logo" width="30%">
-                </a>
-            </div>
-            <div class="main-menu">
-                <ul>
-                    <li>
-                        <a href="#">ABOUT US</a>
-                    </li>
-                    <li>
-                        <a href="#">SCHEDULE</a>
-                    </li>
-                    <li>
-                        <a href="#">OPPORTUNITIES</a>
-                    </li>
-                    <li>
-                        <a href="#">POINTS</a>
-                    </li>
-                    <li>
-                        <a href="#">JOIN</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar -->
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("html/navbar.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
 
     <!-- Landing page -->
     <section class="home">
@@ -76,47 +57,16 @@
      </section>
 
      <!-- Footer -->
-     <footer class="footer">
-        <div class="container">
-          <div class="footer-grid">
-            <div>
-              <a href="home.html">
-                <img src="images/gwcweblogo.png" alt="logo" width="50%">
-              </a>
-            </div>
-            <div>
-              <h4>Organization</h4>
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Opportunities</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Resources</h4>
-              <ul>
-                <li><a href="https://girlswhocode.com">Girls Who Code</a></li>
-                <li><a href="#">Points</a></li>
-                <li><a href="#">Join Us</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Contact</h4>
-              <ul>
-                <li>
-                  <a href="#">nggirlswhocode@gmail.com</a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/ng.gwc/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://remind.com/join/nghsgirlsw"><i class="fa-regular fa-comment"></i></a>
-                    <a href="https://classroom.google.com/c/NjE3MTc4MzUzMzg4?cjc=acmlsoy"><i class="fa-solid fa-chalkboard"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+     <div id="foot-placeholder"></div>
+     <script>
+        $.get("html/footer.html", function(data){
+            $("#foot-placeholder").replaceWith(data);
+        });
+     </script>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
