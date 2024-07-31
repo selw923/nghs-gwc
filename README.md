@@ -2,6 +2,7 @@
 
 If you want to add new HTML webpages to the site, use this template and update navbar.html and/or footer.html:
 
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,3 +40,4 @@ If you want to add new HTML webpages to the site, use this template and update n
     <script src="js/main.js"></script>
 </body>
 </html>
+```

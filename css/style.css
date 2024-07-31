@@ -17,7 +17,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     background-color: var(--light-blue);
-    padding-top: 123.88px;
 }
 
 a {
@@ -35,11 +34,24 @@ img {
 
 /* Navbar */
 .navbar {
-    position: fixed; 
+    position: sticky; 
     top: 0px;
     width: 100%;
     background-color: var(--light-blue);
     padding: 20px;
+    transition: 0.5s;
+}
+
+.navbar.scrolled {
+    background-color: var(--light-teal);
+}
+
+.navbar.scrolled .main-menu ul li a {
+    background-color: var(--light-teal);
+}
+
+.navbar.scrolled .main-menu ul li a:hover {
+    background-color: var(--light-blue);
 }
 
 .navbar .container {
@@ -127,6 +139,7 @@ img {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
+    margin: 10px 5px;
 }
 
 .btn:hover {
@@ -195,6 +208,11 @@ img {
         display: block;
     }
 
+    .recent .news-content {
+        display: inline;
+        width: 50%;
+    }
+
     .footer .footer-logo {
         display: none;
     }
@@ -208,6 +226,42 @@ img {
     .footer .footer-resources {
         display: none;
     }
+}
+
+@media (max-width: 500px) {
+    .btn {
+        margin: 7px 0;
+    }
+
+    .footer .footer-organization {
+        display: none;
+    }
+}
+
+/* Footer */
+.footer {
+    padding: 40px 0;
+}
+  
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer ul li {
+    line-height: 2.5;
+}
+
+.footer i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Homepage */
@@ -239,28 +293,4 @@ img {
     width: 100%;
 }
 
-/* Footer */
-.footer {
-    padding: 40px 0;
-}
-  
-.footer h4 {
-    margin-bottom: 10px;
-}
-
-.footer ul li {
-    line-height: 2.5;
-}
-
-.footer i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-}
+/* About GWC Page */
