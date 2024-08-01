@@ -32,6 +32,61 @@ img {
     max-width: 100%;
 }
 
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+
+.peach {
+    background-color: var(--peach);
+}
+
+
+/* Text classes */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-heading {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+
 /* Navbar */
 .navbar {
     position: sticky; 
@@ -92,40 +147,6 @@ img {
     background-color: var(--light-teal);
 }
 
-/* Utility Classes */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.container-sm {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px 15px;
-}
-
-/* Text classes */
-.text-xxl {
-    font-size: 3rem;
-    line-height: 1.2;
-    font-weight: 600;
-    margin: 40px 0 20px;
-}
-
-.text-xl {
-    font-size: 2.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 40px 0 20px;
-}
-
-.text-sm {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 10px 0 5px;
-}
 
 /* Buttons */
 .btn {
@@ -146,6 +167,7 @@ img {
     opacity: 0.8;
 }
 
+
 /* Hamburger Button */
 .hamburger-button {
     display: none;
@@ -162,6 +184,7 @@ img {
     background: var(--dark-blue);
     margin: 6px 0;
 }
+
 
 /* Mobile Menu */
 .mobile-menu {
@@ -193,6 +216,7 @@ img {
     font-size: 20px;
     transition: 0.3s;
 }
+
 
 /* Media Queries */
 @media (max-width: 960px) {
@@ -238,6 +262,7 @@ img {
     }
 }
 
+
 /* Footer */
 .footer {
     padding: 40px 0;
@@ -264,6 +289,7 @@ img {
     align-items: center;
 }
 
+
 /* Homepage */
 .home {
     margin-bottom: 50px;
@@ -281,10 +307,6 @@ img {
     margin-bottom: 20px;
 }
 
-.recent {
-    background-color: var(--peach);
-}
-
 .news-content {
     display: flex;
 }
@@ -292,5 +314,6 @@ img {
 .news-content .news-image {
     width: 100%;
 }
+
 
 /* About GWC Page */
