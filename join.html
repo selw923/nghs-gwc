@@ -12,15 +12,73 @@
 </head>
 <body>
     <!-- Navbar -->
-    <div id="nav-placeholder"></div>
-    <script>
-        $.get("html/navbar.html", function(data){
-            $("#nav-placeholder").replaceWith(data);
-        });
-    </script>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/gwcweblogo.png" alt="logo" width="35%">
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="about.html">ABOUT US</a>
+                        <ul>
+                            <li>
+                                <a href="about.html">ABOUT GWC</a>
+                            </li>
+                            <li>
+                                <a href="exec.html">EXEC BOARD</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="schedule.html">SCHEDULE</a>
+                    </li>
+                    <li>
+                        <a href="opportunities.html">OPPORTUNITIES</a>
+                    </li>
+                    <li>
+                        <a href="points.html">POINTS</a>
+                    </li>
+                    <li>
+                        <a href="join.html">JOIN</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Hamburger Menu -->
+            <button class="hamburger-button">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </button>
+            <div class="mobile-menu">
+                <ul>
+                    <li>
+                        <a href="about.html">ABOUT GWC</a>
+                    </li>
+                    <li>
+                        <a href="exec.html">EXEC BOARD</a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">SCHEDULE</a>
+                    </li>
+                    <li>
+                        <a href="opportunities.html">OPPORTUNITIES</a>
+                    </li>
+                    <li>
+                        <a href="points.html">POINTS</a>
+                    </li>
+                    <li>
+                        <a href="join.html">JOIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
     <div id="interestForm">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5VS84y3PCPZdd9lTnSmcKKw_AkasU6jdm2IcNO78nMxmYIg/viewform?usp=sf_link" width="100%" height="1480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5VS84y3PCPZdd9lTnSmcKKw_AkasU6jdm2IcNO78nMxmYIg/viewform?usp=sf_link" width="100%" height="1480" frameborder="0" marginheight="0" marginwidth="0"></iframe>
     </div>
 
      <!-- Footer -->
