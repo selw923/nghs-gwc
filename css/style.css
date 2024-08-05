@@ -6,7 +6,9 @@
 
 :root {
     --dark-blue: #003046;
+    --light-green: #eaf9ec;
     --light-blue: #d7f9f4;
+    --super-light-blue: #c5f9f1;
     --teal: #0d9c90;
     --light-teal: #a9e0d8;
     --peach: #fcebdc;
@@ -28,6 +30,10 @@ ul {
     list-style: none;
 }
 
+ul.bullet-list {
+    list-style: inside;
+}
+
 img {
     max-width: 100%;
 }
@@ -40,8 +46,8 @@ img {
     padding: 0 15px;
 }
 
-.container-sm {
-    max-width: 800px;
+.container-lg {
+    max-width: 1100px;
     margin: 0 auto;
     padding: 50px 15px;
 }
@@ -72,15 +78,22 @@ img {
     margin: 0 0 20px;
 }
 
+.text-subheading {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
 .text-xl {
     font-size: 2.2rem;
-    line-height: 1.4;
+    line-height: 1.2;
     font-weight: normal;
     margin: 40px 0 20px;
 }
 
 .text-sm {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.4;
     font-weight: normal;
     margin: 10px 0 5px;
@@ -98,15 +111,16 @@ img {
 }
 
 .navbar.scrolled {
-    background-color: var(--light-teal);
+    background-color: var(--super-light-blue);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navbar.scrolled .main-menu ul li a {
-    background-color: var(--light-teal);
+    background-color: var(--super-light-blue);
 }
 
 .navbar.scrolled .main-menu ul li a:hover {
-    background-color: var(--light-blue);
+    background-color: var(--light-teal);
 }
 
 .navbar .container {
@@ -266,6 +280,7 @@ img {
 /* Footer */
 .footer {
     padding: 40px 0;
+    background-color: var(--light-blue);
 }
   
 .footer h4 {
@@ -287,6 +302,11 @@ img {
     gap: 30px;
     justify-content: center;
     align-items: center;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
 }
 
 
@@ -316,4 +336,49 @@ img {
 }
 
 
-/* About GWC Page */
+/* Opportunities Page */
+.field-trip-images {
+    width: 50%;
+    display: flex;
+}
+
+
+/* Exec Board Page */
+.exec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    gap: 50px;
+    justify-content: center;
+}
+
+.card {
+    background: var(--light-teal);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .photo {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 10px 10px 0px;
+    padding: 10px 10px 0px;
+}
+
+.card .photo img {
+    object-fit: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card .text {
+    padding: 20px;
+    text-align: center;
+}
+
+.card .text .desc {
+    padding: 10px;
+}

@@ -1,6 +1,6 @@
 # Adding Webpages
 
-To add new HTML webpages to the site, use this template and update navbar.html and/or footer.html as needed:
+To add new HTML webpages to the site, use this template and update the navbar and/or footer.html as needed:
 
 ```
 <!DOCTYPE html>
