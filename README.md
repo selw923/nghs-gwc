@@ -1,7 +1,8 @@
-# Adding Webpages
+# NGHS Girls Who Code Chapter Website
+Some info for editing and making changes to the site.
 
+## Adding New Webpages
 To add new HTML webpages to the site, use this template and update the navbar and/or footer.html as needed:
-
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -83,7 +84,20 @@ To add new HTML webpages to the site, use this template and update the navbar an
         </div>
     </nav>
 
-    <!-- Webpage content goes here -->
+    <!-- Webpage Content -->
+    <section class="new-section">
+        <div class="container-sm">
+            <div class="new-section-content">
+                <h1 class="new-section-heading text-heading">
+                    New Section
+                </h1>
+                <div class="new-section-text">
+                    New section text.
+                </div>
+                <!-- Add more divs for page content or images as needed -->
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <div id="foot-placeholder"></div>
