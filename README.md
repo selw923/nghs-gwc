@@ -86,7 +86,7 @@ To add new HTML webpages to the site, use this template and update the navbar an
 
     <!-- Webpage Content -->
     <section class="new-section">
-        <div class="container-sm">
+        <div class="container-sm peach">
             <div class="new-section-content">
                 <h1 class="new-section-heading text-heading">
                     New Section

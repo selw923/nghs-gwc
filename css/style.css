@@ -40,22 +40,23 @@ img {
 
 
 /* Utility Classes */
-.container {
+.container { /* Used for mostly just for the home page */
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-.container-lg {
+.container-lg { /* Used on the exec page */
     max-width: 1100px;
     margin: 0 auto;
     padding: 50px 15px;
 }
 
-.container-sm {
+.container-sm { /* Use for most other webpages */
     max-width: 800px;
     margin: 0 auto;
     padding: 50px 15px;
+    background-color: var(--peach);
 }
 
 .peach {
@@ -64,21 +65,21 @@ img {
 
 
 /* Text classes */
-.text-xxl {
+.text-xxl { /* Used for the heading on the home page */
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 600;
     margin: 40px 0 20px;
 }
 
-.text-heading {
+.text-heading { /* Used for the headings on webpages besides home page */
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 600;
     margin: 0 0 20px;
 }
 
-.text-subheading {
+.text-subheading { /* Subheading used on opportunities page */
     font-size: 2.2rem;
     line-height: 1.2;
     font-weight: 600;
